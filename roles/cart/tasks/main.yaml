@@ -13,9 +13,9 @@
     name: common
     tasks_from: system-setup.yaml
 
-- name: enable and restart the service
+- name: enable and restart service
   ansible.builtin.service:
-    name: user
-    enabled: yes
+    name: cart
     state: restarted
-    
+    enabled: yes
+
