@@ -1,0 +1,5 @@
+- name: enable and restart the service
+  ansible.builtin.service:
+    name: "{{ component }}"
+    enabled: yes
+    state: restarted

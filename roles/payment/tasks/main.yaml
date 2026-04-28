@@ -1,16 +1,16 @@
-- name: app setup
+- name: app-setup
   ansible.builtin.import_role:
     name: common
     tasks_from: app-setup.yaml
 
-- name: nodejs setup
+- name: python-setup
   ansible.builtin.import_role:
     name: common
-    tasks_from: nodejs-setup.yaml
+    tasks_from: python-setup.yaml
 
-- name: system setup
+- name: system-setup
   ansible.builtin.import_role:
     name: common
     tasks_from: system-setup.yaml
-  notify: enable and restart the service
+  notify: enable and restart service
 

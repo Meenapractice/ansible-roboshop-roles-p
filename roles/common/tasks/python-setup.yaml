@@ -1,0 +1,17 @@
+- name: Installing payment
+  hosts: payment
+  become: yes
+  tasks:
+  - name: installing python
+    ansible.builtin.dnf:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - python3
+    - gcc
+    - python3-devel
+
+- name: install pip requirements
+  ansible.builtin.pip:
+    requirements: /app/requirements.txt
+    executable: pip3
