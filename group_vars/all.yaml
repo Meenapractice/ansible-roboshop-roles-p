@@ -10,7 +10,4 @@ RABBITMQ_HOST: rabbitmq-dev.devopstest.fun
 SHIPPING_HOST: shipping-dev.devopstest.fun
 PAYMENT_HOST: payment-dev.devopstest.fun
 FRONTEND_HOST: roboshop-dev.devopstest.fun
-SHIPPING_HOST: shipping-dev.devopstest.fun
-PAYMENT_HOST: payment-dev.devopstest.fun
-FRONTEND_HOST: roboshop-dev.devopstest.fun
 
