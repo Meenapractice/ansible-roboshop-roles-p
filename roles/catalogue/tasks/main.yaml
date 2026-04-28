@@ -1,5 +1,5 @@
 - name: app-setup
-  tag:
+  tags:
   - deployment
   ansible.builtin.import_role:
     name: common
